@@ -1,0 +1,6 @@
+framework module Pods_TechTwitter {
+  umbrella header "Pods-TechTwitter-umbrella.h"
+
+  export *
+  module * { export * }
+}
