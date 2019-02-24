@@ -30,24 +30,17 @@ class ListViewController: UIViewController,UITableViewDataSource, UITableViewDel
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-            let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")!
-            cell.textLabel!.text = postArray[indexPath.section].name
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! ListCustomTableViewCell
+            cell.nameLabel.text = postArray[indexPath.row].name
+            cell.textView.text = postArray[indexPath.row].content
             return cell
     }
-    @IBAction func back(){
-        dismiss(animated: true, completion: nil)
-    }
-    
-    
     
     @IBAction func add(){
         if textField.text!.isEmpty { return }
         let post = Post()
-        post.name = "hoge"
+        post.name = userName
         post.content = textField.text!
-
-        
         model.create(post: post) {
             let alert = UIAlertController(title: "送信完了", message: "送信完了", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
@@ -55,23 +48,8 @@ class ListViewController: UIViewController,UITableViewDataSource, UITableViewDel
             }))
             self.present(alert, animated: true, completion: nil)
         }
-        updateStore()
     }
     
-    
-    func updateStore(){
-        db.collection("users").getDocuments() { (querySnapshot, err) in
-            if let err = err {
-                print("Error getting documents: \(err)")
-            } else {
-//                for document in querySnapshot!.documents {
-//                   self.postArray.append(Post(name:document.data()["first"] as! String, content: document.data()["last"] as! String))
-//
-//                }
-            }
-        }
-        tableView.reloadData()
-    }
     
     
 

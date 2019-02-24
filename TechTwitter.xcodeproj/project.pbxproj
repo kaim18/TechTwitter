@@ -11,6 +11,7 @@
 		8251202FDB634953BFE3F0E5 /* Pods_TechTwitterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE536C09B351D80CD64E338 /* Pods_TechTwitterTests.framework */; };
 		9636A2E522227E0D0032FCE4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9636A2E422227E0D0032FCE4 /* GoogleService-Info.plist */; };
 		9636A2E7222290090032FCE4 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9636A2E6222290090032FCE4 /* ListViewModel.swift */; };
+		9636A2E9222355CC0032FCE4 /* ListCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9636A2E8222355CC0032FCE4 /* ListCustomTableViewCell.swift */; };
 		96428C55221A926100C7BBA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96428C54221A926100C7BBA5 /* AppDelegate.swift */; };
 		96428C57221A926100C7BBA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96428C56221A926100C7BBA5 /* ViewController.swift */; };
 		96428C5A221A926100C7BBA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96428C58221A926100C7BBA5 /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 		8C982241840E378BF17830E4 /* Pods-TechTwitter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechTwitter.debug.xcconfig"; path = "Target Support Files/Pods-TechTwitter/Pods-TechTwitter.debug.xcconfig"; sourceTree = "<group>"; };
 		9636A2E422227E0D0032FCE4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9636A2E6222290090032FCE4 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		9636A2E8222355CC0032FCE4 /* ListCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCustomTableViewCell.swift; sourceTree = "<group>"; };
 		96428C51221A926100C7BBA5 /* TechTwitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechTwitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96428C54221A926100C7BBA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96428C56221A926100C7BBA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				96428C84221A9C2500C7BBA5 /* ListViewController.swift */,
 				96428C86221AA6D100C7BBA5 /* Post.swift */,
 				9636A2E6222290090032FCE4 /* ListViewModel.swift */,
+				9636A2E8222355CC0032FCE4 /* ListCustomTableViewCell.swift */,
 			);
 			path = TechTwitter;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9636A2E9222355CC0032FCE4 /* ListCustomTableViewCell.swift in Sources */,
 				9636A2E7222290090032FCE4 /* ListViewModel.swift in Sources */,
 				96428C57221A926100C7BBA5 /* ViewController.swift in Sources */,
 				96428C55221A926100C7BBA5 /* AppDelegate.swift in Sources */,
