@@ -9,12 +9,6 @@
 import Foundation
 
 class Post {
-    var id: String!
     var name: String!
     var content: String!
-    init (id: String, name: String, content: String){
-        self.id = id
-        self.name = name
-        self.content = content
-    }
 }
